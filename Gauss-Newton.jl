@@ -8,8 +8,6 @@ das quais dependem as funções residuais, resultando em uma matriz jacobiana de
 
 #Este algoritmo precisa de uma função modelo, dos dados experimentais das variáveis independentes e da dependente e das derivada analítica do modelo para cada variável independente
 
-include("Exercício Proposto 02.jl")
-
 
 function optim_d(mder::Array,res::Function,x::Array)
     jacobiana = mder[1](x...)
